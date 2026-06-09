@@ -35,9 +35,9 @@ while True:
         if producto in inventario:
             pedido = f"{nombre} - {producto.title()}"
             pedidos_pendientes.append(pedido)
-            print("✅ Pedido registrado correctamente.")
+            print("Pedido registrado correctamente.")
         else:
-            print("❌ Error: ese producto no existe en el inventario.")
+            print("Error: ese producto no existe en el inventario.")
 
     elif opcion == "3":
         if len(pedidos_pendientes) == 0:
@@ -48,7 +48,7 @@ while True:
                 print("➡ Entregando pedido a:", pedido)
 
             pedidos_pendientes.clear()
-            print("✅ Todos los pedidos fueron entregados.")
+            print("Todos los pedidos fueron entregados.")
 
     elif opcion == "4":
         print("\nCerrando el sistema. ¡Que tengas un buen día!")
